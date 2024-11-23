@@ -145,12 +145,13 @@ h2 {
 
      .card-container{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: .3rem;
      align-content: start;
      width: 100%;
      padding: 0;
-       border: 3px solid red;
+       border: 3px solid yellow;
+         overflow: hidden;
    }
    .card{
       background: white;
@@ -160,7 +161,7 @@ h2 {
       min-height: 200px;
       max-width: auto;
       padding: .2em; 
-       border: 3px solid var(--light-blue);
+      
       
    }
 
@@ -175,7 +176,7 @@ h2 {
 
 .card-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    gap: .8rem;
   align-content: start;
   width: 100%;
@@ -191,7 +192,13 @@ h2 {
    max-width: auto;
    
 }
-
+.cards{
+     display: flex;
+  padding: 0;
+   margin: 0;
+ 
+   justify-content: center;
+}
 
 .card-footer{
    display: flex;
