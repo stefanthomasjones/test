@@ -158,13 +158,16 @@ h2 {
       border: 1px solid #777;
       border-radius: .25rem;
       overflow: hidden;
-      min-height: 200px;
+      min-height: 100px;
       max-width: auto;
       padding: .2em; 
       
       
    }
-
+.card-body{
+   padding: .2em;
+   text-align: center;
+}
 }
 /* cards */
 
@@ -263,7 +266,7 @@ cursor: pointer;
 .card-header.card-img > img {
    display: block;
    width: 100%;
-   aspect-ratio: 16 / 9;
+
    object-fit: cover;
    max-height: 200px;
    object-position: center;
