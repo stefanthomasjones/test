@@ -1,0 +1,190 @@
+:root {
+    --nav-blue: #1d2635;
+    --light-blue: hwb(195 6% 4%);
+    --offset-blue: rgba(36, 48, 67)
+
+}
+
+* {
+
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 0;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+ html{
+    background-color: var(--nav-blue);
+    border: none;
+ }
+header {
+    border: 1px var(--nav-blue);
+    background-color: var(--nav-blue);
+    color: white;
+    padding: 0;
+    width: 100%;
+    height: 161px;
+    position: relative;
+    margin-bottom: 0px;
+
+}
+
+/* Nav Bar */
+.navContainer{
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    padding: 15px;
+    cursor: pointer;
+   height:100%;
+   aspect-ratio: auto 1 / 1;
+    margin: 0;
+}
+
+
+.blueboarder {
+    width: 100%;
+    height: 8px;
+    background-color: var(--light-blue);
+    border: none;
+    margin-top: -3;
+    position: relative;
+}
+
+nav {
+    align-content: center;
+    margin-right: 2em;
+}
+
+ul {
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    margin: .80rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+li:hover {
+    color: var(--light-blue);
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primaryNav {
+    display: flex;
+}
+
+#contact-btn {
+    background-color: var(--light-blue);
+    border-radius: .4rem;
+    padding: 8px 10px;
+    font-weight: 500;
+}
+
+#contact-btn:hover {
+    transition: 1.5s;
+    background-color: rgb(79, 205, 247);
+    color: white;
+}
+.sr-only{
+    display: none;
+}
+
+/* Mobile Nav */
+.navToggle{
+    display: none;
+}
+@media  (max-width: 850px){
+    .blueboarder{
+        height: 5px;
+    }
+    .primaryNav{
+        position: fixed;
+        inset: 0 0 0 0%;
+        background-color: var(--nav-blue);
+        flex-direction: column;
+        padding: min(12vh, 15rem) 2em;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        visibility: hidden;
+      margin-top:0px;
+
+      opacity:1;
+      transform: scaleX(.2);
+      transition: transform .3s ease-in-out;
+    }
+    .primaryNav[data-visible="true"]{
+        transform: scaleX(1);
+        visibility:visible;
+    }
+   
+    .navToggle{
+        display: block;
+       width: 3rem;
+       aspect-ratio: 1;
+       z-index: 99999;
+       background: url("Img/hamburgerMenu.svg");
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       border: none;
+       margin-right: -1rem;
+       
+    }
+    .navToggle[aria-expanded="true"]{
+        background: url("Img/closeX.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      border: white solid 4px;
+      border-radius: 4px;
+      width: 3rem;
+       aspect-ratio: 1;
+    }
+    
+  
+    .logo {
+        padding:0;
+      
+        cursor: pointer;
+       height: 70px;
+        overflow: none;
+        margin: 0;
+    }
+    #logo{
+        margin-left: auto; 
+        margin-right: -4rem;
+    }
+    header{
+        height: 100px;
+        padding: 0;
+        margin: 0;
+}
+
+    .flexcontainer {
+        display: flex;
+      
+        align-items: center;
+        height: 100px;
+    }
+    .navToggle {
+        margin-left: auto;
+      }
+}

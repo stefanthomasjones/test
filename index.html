@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesNav.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="preload" as="image" href="coverImg.webp" type="image/webp">
+    <link rel="preload" as="image" href="Img/hamburgerMenu.svg" >
+    <link rel="preload" as="image" href="Img/closeX.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navContainer">
+            <div class="flexcontainer">
+               
+                <div id="logo">
+                <img class="logo"src="Img/dan-logo.png" alt="Logo for Daniel Scott Roofing">
+            </div>
+            <button class="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Main Navigation Menu"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul data-visible="false"class="primaryNav flexNav" id="primaryNav">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Areas</a></li>
+                    <li><a>About</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Our Work</a></li>
+                    <li id="contact-btn"><a>Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+            
+        </div>
+    </header>
+    <div class="blueboarder"></div>
+<!--Cover Image-->
+
+    <main>
+
+    <section aria-label="Hero Image of a new roof by Daniel Scott Roofing" class="coverImg overlay"> 
+    <article class="heroContent">
+        <h1 >We’ve Got You Covered </h1>
+        <h2>Daniel Scott Roofing A Reputation Built On Hard Work, Customer Recommendations & Excellent Customer Service</h2>
+       <div class="btnWrap">
+        <button aria-label="Phone for a quote" class="heroBtn contactHeroBtn">Call Now</button>
+        
+    </div> 
+    </article>
+    </section>
+   
+    <section class="aboutSection">
+        <article class="aboutFlex">
+            <div class="aboutTitle"><h1>
+                Why choose Daniel Scott Roofing </h1>
+            </div>
+            <div class="aboutText"><p>We are a well established roofing contractor that has built up an enviable reputation. Our goal is to meet and exceed the expectations of every customer. We take on all types of jobs from small domestic work to larger commercial projects, all carried out to the highest standards, and at very competitive prices. We are qualified and fully insured and with vast knowledge and experience to complete any job. We also offer a 20 year guarantee on our roofing projects subject to terms and conditions. Only quality materials are supplied and used and all our work is guaranteed.<br><br> We specialise in all aspects of Roofing throughout Stockport, Manchester and Cheshire Areas. Below is a selection of services we provide and area we cover.</p>
+                <div class="aboutBreak" >
+
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+
+   <!-- Service cards--> 
+<section class="cardSection">
+    <article class="cards">
+        <h1 style="background-color: var(--nav-blue); color: white;">Our Service</h1>
+    <div class="card-container">
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+    
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img alt="Loft Conversions"  src="loft.jpg">
+
+            </div>
+            <div class="card-body">
+                <h2>Loft Conversions</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="solar.jpg">
+
+            </div>
+            <div class="card-body">
+                <h2>Solar Panels</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card shadow">
+            <div class="card-header card-img">
+                <img loading="lazy"  alt="A Repaired Roof"  src="file.webp">
+
+            </div>
+            <div class="card-body">
+                <h2>Roofing Repairs</h2>
+                <p>Old and defective rooflights will lead to gloomier interiors and the need for increased artificial lighting.</p>
+            </div>
+
+            <div class="card-footer">
+             
+                <button class="btn btn-outline">Read More</button>
+
+            </div>
+        </div>
+    
+    
+    </div>
+    </article>
+
+</section>
+
+
+    </main>
+</div>   
+<div class="contactwrap">
+<div class="contactHeader">
+<h1> Contact Us</h1>
+<div class="contactOpt">
+    <button>Phone</button>
+    <button>Text</button>
+    <button>Email</button>
+    <button>Contact Form</button>
+</div></div>
+<div class="formContainer">
+
+    <form action="https://formsubmit.co/jones.stefanthomas@gmail.com" method="POST">
+    
+        <div class="personalInfo">
+               <div class="inputs">
+            <label for="fullName">Full Name </label>
+        
+        <input type="text" name="name" id="fullName" placeholder="required" required>
+    </div> 
+<div class="inputs"> 
+        <label for="contactEmail">E-mail Address</label>
+        <input type="email" name="email" id="contactEmail" placeholder="required" required>
+    </div> 
+<div class="inputs"> 
+        <label for="contactNumber">Phone Number</label>
+        <input type="tel" name="phone" id="contactNumber" placeholder="optional" minlength="7" maxlength="11">  
+    </div> 
+<div class="inputs">        
+        <label for="companyName">Company Name</label>
+        <input type="text" name="companyName" id="companyName" placeholder="optional" maxlength="25" required>
+    </div> 
+    </div>
+    
+        <fieldset>
+            <legend>Industry</legend>
+            <div class="fieldInput">
+             <label for="domestic">Domestic</label>
+            <input type="radio" id="domestic" name="Industry" value="Domestic"/>
+        </div>
+
+        <div class="fieldInput">
+            <label for="commercial">Commercial</label>
+            <input type="radio" id="commercial" name="Industry" value="Commercial" placeholder="optional" />
+        </div>
+          </fieldset>
+<div class="formBottom">
+        <label for="formMessage"> Message:</label>
+        <textarea id="forMessage" name="messageBox" placeholder="required" required></textarea>
+
+<div class="consent">
+        <input type="checkbox" id="termsandconditions" name="termsandconditions" value="Agreed" required >
+          <label for="termsandconditions"><p>CONSENT TO HAVING THIS WEBSITE STORE MY SUBMITTED INFORMATION SO THEY CAN RESPOND TO MY ENQUIRY.</p></label>
+          
+        </div>
+        <div class="btnflex">
+          <button class="formSubmitBtn" type="submit">Send Your Enquiry</button>
+
+</div>
+</div>
+   </form>
+</div>
+</div>
+
+<!-- Review slider -->
+<h1 style="color:white; margin-left:15px; font-size: 1.3rem;">What Our Customer Think</h1>
+<div aria-label="Customer review carousel" id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div aria-label="slide 1 of 4" class="slide slide_1">
+                <div class="slide-content">
+                  <p>After several attempts to find a roofer we came across Daniel Scott via a neighbour. We were very glad we did, Daniel and his team were excellent. We employed Daniel to re-roof my 93 year old’s mother-in-laws roof. He and his team were very methodical and tidy and got the job done in next to no time and through some challenging cold weather (heavy morning frost). We would like to thank him and his team for a job well done</p> 
+                  <h2>Jim Morris</h2>
+                  <h5>Homeowner</h5>
+                   
+                </div>
+             </div>
+             <div aria-label="slide 2 of 4" class="slide slide_2">
+                <div class="slide-content">
+                    <p>Daniel Scott Roofing have just finished doing a full clay tile re-roof for us (5 bed detached house, so big job), also including Velux skylight replacements, chimney repairs & gutter replacements. Am so pleased with the results! The workmanship & quality is superb; Dan could not have been more helpful, from discussing tiles & recommending materials to breaking down costs in detail so we knew exactly what we were paying for. Communication was great – we knew what to expect, and timescales. Everything was tidied & left in a neat state each day. Would highly recommend</p> 
+                  <h2>Martyn Beauchamp</h2>
+                  <h5>Homeowner</h5>
+                </div>
+             </div>
+             <div aria-label="slide 3 of 4" class="slide slide_3">
+                <div class="slide-content">
+                    <p>Daniel Scott roofing have just completed my roof in Cheadle Hulme, the lads were excellent and very tidy which was surprising. Dan was very clear and talked me through the job step by step. He also provided me with a clear and understanding quote and the job ran very smooth and pretty much to the letter. Very very happy with Dan and his team and will be definitely recommended him to all friends and family.</p> 
+                  <h2>John Howards</h2>
+                  <h5>Homeowner</h5>
+                </div>
+             </div>
+             
+          </div>
+       </div>
+    </div>
+    <div id="controls">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+      
+    </div>
+ </div>
+
+<!-- FAQ-->
+ <div>
+
+ </div>
+<script src="scripts/script.js" defer></script>
+
+</body>
+</html>
