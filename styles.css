@@ -143,12 +143,22 @@ h2 {
       margin-right: 5px;
    }
 
-   .card-container{
+     .card-container{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: .3rem;
      align-content: start;
      width: 100%;
+     padding: 0;
+   }
+   .card{
+      background: white;
+      border: 1px solid #777;
+      border-radius: .25rem;
+      overflow: hidden;
+      min-height: 200px;
+      max-width: 90%;
+      
    }
 
 }
