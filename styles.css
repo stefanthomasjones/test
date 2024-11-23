@@ -150,7 +150,7 @@ h2 {
      align-content: start;
      width: 100%;
      padding: 0;
-        border:red solid 1px;
+       border: 1px solid var(--light-blue);
    }
    .card{
       background: white;
